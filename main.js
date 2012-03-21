@@ -1,5 +1,5 @@
 var summarizer = require('./lib/handler.js');
 
-summarizer.summarize("patel", function(summary) {
+summarizer.summarize("KONY", function(summary) {
     console.log(summary);
 });
