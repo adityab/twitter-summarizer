@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Tweet summarizer</title>
+</head>
+
+<body>
+    <h1>Tweet Summarizer</h1>
+    <p>This is an <strong>experiment</strong> which generates an <em>abstractive</em> summary of a large stream of tweets pertaining to a common topic.</p>
+    <p>The search string is used to retrieve 100 <em>popular</em> and <em>new</em> tweets, and the tweets are then fed to a graph-based summarizer which identifies <em>common</em> and possibly <em>discontinuous</em> sub-strings among the documents, and creates a pool of candidate strings. The final summary is chosen by ranking the candidate strings.</p>
+    <form action = '/' method = 'POST'>
+        <label for="query">Enter the search string:</label>
+        <input type="text" name ="query">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
